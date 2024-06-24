@@ -11,7 +11,6 @@ async function bootstrap() {
   app.setBaseViewsDir(join(__dirname, '..', 'views'))
   app.setViewEngine('hbs')
   hbs.registerPartials(join(__dirname, '..', 'views/layouts'))
-  
 
   await app.listen(3000);
 }

@@ -6,8 +6,8 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 		<link href="/css/app.css" rel="stylesheet" />
 		<title>
-			{{#if title}}
-				{{ title }}
+			{{#if viewData.title}}
+				{{ viewData.title }}
 			{{else}}
 				Online Store
 			{{/if}}
@@ -24,8 +24,8 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav ms-auto">
-						<a class="nav-link active" href="#">Home</a>
-						<a class="nav-link active" href="#">About</a>
+						<a class="nav-link active" href="/">Home</a>
+						<a class="nav-link active" href="/about">About</a>
 					</div>
 				</div>
 			</div>
